@@ -23,13 +23,13 @@ XFor words that contain "qu" in the first consonants, move qu and other first Xc
 XExample Input: Squawk
 XExample Output: awkSquay
 
-The program applies the previous rules to single word entries
-Example Input: Beef
-Example Output eefBay
+xThe program applies the previous rules to single word entries
+xExample Input: Beef
+xExample Output eefBay
 
-The program applies the previous rules to multi-word entries
-Example Input: I am tired
-Example output: Iay amway iredtay
+xThe program applies the previous rules to multi-word entries
+xExample Input: I am tired
+xExample output: Iay amway iredtay
 
 The program will make sure ending punctuation remains at the end of the sentence
 Example Input: I am tired.
