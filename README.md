@@ -1,23 +1,23 @@
 ## Specs
-X The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
-Example Input: 3
-Example Output: 3
+X The program does nothing to non-alphabetical characters, since they do not Xcontain consonants or vowels.
+XExample Input: 3
+XExample Output: 3
 
 X The program adds "ay" to single-letter words beginning with a vowel.
-Example Input: i
-Example Output: iay
+XExample Input: i
+XExample Output: iay
 
-The program adds "way" to multi-letter words beginning with a vowel.
-Example Input: and
-Example Output: andway
+X The program adds "way" to multi-letter words beginning with a vowel.
+X Example Input: and
+X Example Output: andway
 
-For words beginning with a single consonant, including y, the program moves the consonant to the end of the word and adds "ay".
-Example Input: banana
-Example Output: ananabay
+XFor words beginning with a single consonant, including y, the program moves Xthe consonant to the end of the word and adds "ay".
+XExample Input: banana
+XExample Output: ananabay
 
-For words beginning with multiple consonants the program moves the consonant to the end of the word and adds "ay".
-Example Input: Chronic, cry
-Example output: onicChray, ycray
+XFor words beginning with multiple consonants the program moves the consonants Xto the end of the word and adds "ay".
+XExample Input: Chronic, cry
+XExample output: onicChray, ycray
 
 For words that contain "qu" in the first consonants, move qu and other first consonants to the end of the word and add "ay"
 Example Input: Squawk
