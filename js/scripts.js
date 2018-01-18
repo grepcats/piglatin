@@ -1,13 +1,31 @@
 function wordArray(text) {
   return text.split(" ");
-
 }
+
+function punctuationHandle(textArray) {
+  var punctuatedArray = textArray.map(function(word) {
+
+    if (word.includes(".")) {
+      var index = word.indexOf(".")
+      return(word.slice(0,index) + word.slice(index+1, ) + ".");
+    } else if (word.includes(",")) {
+      var index = word.indexOf(",")
+      return(word.slice(0,index) + word.slice(index+1, ) + ",");
+    } else {
+      return(word);
+    }
+
+  });
+  debugger;
+  return punctuatedArray;
+};
+
 function pigLatinTranslate(text){
   var words = wordArray(text);
-  //alert(words);
   var translatedWords = words.map(function(word){
      return(singleWordTranslate(word));
    });
+   translatedWords = punctuationHandle(translatedWords);
    return translatedWords.join(" ");
 }
 
@@ -25,7 +43,7 @@ function singleWordTranslate(text){
   }
   //tests to see if a word starts with qu
   if (/[^aeiou]/.test(text[0]) && /[^aeio]/.test(text[1]) && /[^0-9]/.test(text[0])) {
-    for (var i = 0; /[^aeio]/.test(text[i]); i++) {
+    for (var i = 0; /[^aeioy]/.test(text[i]); i++) {
     }
     return(text.slice(i, ) + text.slice(0, i) + "ay");
   }
