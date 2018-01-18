@@ -19,9 +19,9 @@ XFor words beginning with multiple consonants the program moves the consonants X
 XExample Input: Chronic, cry
 XExample output: onicChray, ycray
 
-For words that contain "qu" in the first consonants, move qu and other first consonants to the end of the word and add "ay"
-Example Input: Squawk
-Example Output: awkSquay
+XFor words that contain "qu" in the first consonants, move qu and other first Xconsonants to the end of the word and add "ay"
+XExample Input: Squawk
+XExample Output: awkSquay
 
 The program applies the previous rules to single word entries
 Example Input: Beef
