@@ -66,7 +66,8 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = $("input#pigLatin").val();
     wordArray(userInput);
-    alert(pigLatinTranslate(userInput));
+    $(".resultWell").show();
+    $("#result").text(pigLatinTranslate(userInput));
 
 
   });
