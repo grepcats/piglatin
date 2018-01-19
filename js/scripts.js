@@ -16,7 +16,6 @@ function punctuationHandle(textArray) {
     }
 
   });
-  debugger;
   return punctuatedArray;
 };
 
@@ -43,7 +42,10 @@ function singleWordTranslate(text){
   }
   //tests to see if a word starts with qu
   if (/[^aeiou]/i.test(text[0]) && /[^aeio]/i.test(text[1]) && /[^0-9]/.test(text[0])) {
-    for (var i = 0; /[^aeioy]/.test(text[i]); i++) {
+    for (var i = 0; /[^aeiouy]/.test(text[i]); i++) {
+    }
+    if (text[0] === "q" || text[1] === "q") {
+      return(text.slice(i+1, ) + text.slice(0, i+1) + "ay");
     }
     return(text.slice(i, ) + text.slice(0, i) + "ay");
   }
